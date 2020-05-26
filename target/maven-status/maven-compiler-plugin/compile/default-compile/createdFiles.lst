@@ -1,0 +1,5 @@
+objectRepository\demoblaze\demoBlazeHomePage.class
+variables\demoblaze\UserVariables.class
+variables\demoblaze\UrlVariables.class
+objectRepository\demoblaze\demoBlazeProductPage.class
+objectRepository\demoblaze\demoBlazeCartPage.class
