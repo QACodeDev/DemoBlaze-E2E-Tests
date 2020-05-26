@@ -1,6 +1,4 @@
-# How to run the Test #
-
-*DemoBlaze-E2E-Tests
+# DemoBlaze-E2E-Tests #
 
 **Prerequisite**
 1. Java environment 
