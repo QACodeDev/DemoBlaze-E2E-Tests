@@ -15,12 +15,15 @@ public class WebdriverSettings {
 	 WebDriver driver;
 
 	public WebDriver driverSettings() throws MalformedURLException{
-		nodeurl="http://localhost:4444/wd/hub";
-		//System.setProperty("webdriver.chrome.driver", "C:\\Users\\EHOINZM\\Desktop\\DevOps\\DemoBlaze-E2E-Tests\\chromedriver.exe");
-		//WebDriver driver = new ChromeDriver();
+		nodeurl="http://52.191.17.161/wd/hub";
 		DesiredCapabilities cap = new DesiredCapabilities();
 		cap.setCapability(CapabilityType.BROWSER_NAME,BrowserType.CHROME);
 		cap.setCapability(CapabilityType.PLATFORM_NAME, Platform.LINUX);
+		cap.setCapability("name", "DemoBlaze-E2E-Test");
+		cap.setCapability("build", "DemoBlaze-Build");
+		cap.setCapability("testFileNameTemplate", "{testName}_{browser}_{timestamp}");
+		cap.setCapability("idleTimeout", 120);
+		cap.setCapability("recordVideo", true);
 		driver = new RemoteWebDriver(new URL(nodeurl),cap);
 		return driver;
 	}
