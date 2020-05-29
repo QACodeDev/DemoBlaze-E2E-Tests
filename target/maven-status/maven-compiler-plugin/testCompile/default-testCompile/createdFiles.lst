@@ -1,3 +1,4 @@
-testcases\demoblaze\End2EndTest.class
+testcases\demoblaze\purchaseProduct.class
 testcases\demoblaze\WebdriverSettings.class
 testcases\demoblaze\BrowserSetting.class
+testcases\demoblaze\viewProducts.class

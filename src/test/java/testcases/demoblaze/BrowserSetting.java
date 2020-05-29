@@ -8,11 +8,11 @@ public class BrowserSetting {
 	
 	WebDriver driver;
 
-	public WebDriver BrowserSettings(){
+	public WebDriver BrowserSettings(String browser){
 			
 		try{
 			WebdriverSettings wds = new WebdriverSettings();
-			driver = wds.driverSettings();
+			driver = wds.driverSettings(browser);
 			driver.manage().deleteAllCookies();
 			driver.manage().window().maximize();
 			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
