@@ -1,0 +1,21 @@
+name: 'Zalenium-AKS-AzurePipeline'
+
+pool:
+  name: Azure Pipelines
+  demands: maven
+
+steps:
+- task: Maven@3
+  displayName: 'Run Selenium Tests'
+  inputs:
+    goals: test
+    testResultsFiles: '**/surefire-reports/*.xml'
+    testRunTitle: 'DemoBlaze E2E Test'
+
+- task: PublishBuildArtifacts@1
+  displayName: 'Publish Artifact: TestResult'
+  inputs:
+    PathtoPublish: 'target/surefire-reports'
+    ArtifactName: TestResult
+  continueOnError: true
+

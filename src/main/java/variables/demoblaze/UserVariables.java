@@ -9,6 +9,8 @@ public final class UserVariables {
 	public static final String CREDIT_CARD = "23893895649564";
 	public static final String CARD_MONTH = "10";
 	public static final String CARD_YEAR = "2020";
+	public static final String GRID_HOST = "52.191.17.161";
+
 
 	
 }

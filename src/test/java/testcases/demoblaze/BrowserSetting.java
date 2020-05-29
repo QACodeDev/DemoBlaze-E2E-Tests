@@ -1,6 +1,8 @@
 package testcases.demoblaze;
 
 import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.Cookie;
 import org.openqa.selenium.WebDriver;
 import static variables.demoblaze.UrlVariables.*;
 
@@ -17,6 +19,8 @@ public class BrowserSetting {
 			driver.manage().window().maximize();
 			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 			driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
+			Cookie cookie = new Cookie("zaleniumMessage", "Launch application");
+    		driver.manage().addCookie(cookie);
 			driver.get(BASE_URL);
 			
 		}catch(Exception e)

@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 4.475 s <<< FAILURE! - in TestSuite
-purchaseProduct(testcases.demoblaze.End2EndTest)  Time elapsed: 2.211 s  <<< FAILURE!
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 263.706 s <<< FAILURE! - in TestSuite
+DemoBlaze_TC02_purchaseProduct(testcases.demoblaze.purchaseProduct)  Time elapsed: 220.233 s  <<< FAILURE!
 java.lang.NullPointerException
-	at testcases.demoblaze.End2EndTest.purchaseProduct(End2EndTest.java:31)
+	at testcases.demoblaze.purchaseProduct.DemoBlaze_TC02_purchaseProduct(purchaseProduct.java:35)
 
