@@ -2,12 +2,12 @@
 ![project Logo](/ProjectPic.png)
 
 ## Project Summary
-This project is execute selenium tests in parallel by using the zalenium(installed on AKS by helm chart) through azure pipeline.Parallel test execution save lots of time ,effort and cost which helps faster execution.
+This project used to execute selenium tests in parallel by using the zalenium(installed on AKS by helm chart) through azure pipeline.Parallel test execution save lots of time ,effort and cost which helps faster in execution.
 
 ### Zalenium
 A flexible and scalable container-based Selenium Grid with video recording, live preview, basic auth & dashboard. Start a Selenium Grid in seconds, a grid that scales up and down dynamically with this solution based on docker-selenium to run your tests in Firefox and Chrome. 
 
-Zalenium’ s main goal is: to allow anyone to have a disposable and flexible Selenium Grid infrastructure. 
+#### Zalenium’ s main goal is: to allow anyone to have a disposable and flexible Selenium Grid infrastructure. 
 
 ![project Logo](/Architecture.png)
 
@@ -16,7 +16,7 @@ Issue with selenium grid setup:
 
 - Have a stable grid to run UI tests with Selenium
 - Maintain it over time (keep up with new browser, Selenium and driver’s versions)
-- Provide capabilities to cover all browsers and platforms Zalenium was created to solve the widespread issue that a lot of people have when you have some tests, and you want to start running them in parallel. You start by getting into Selenium Grid but encounter roadblocks pretty quickly when trying to scale
+- Provide capabilities to cover all browsers and platforms Zalenium was created to solve the widespread issue that a lot of people have  when you have some tests, and you want to start running them in parallel. You start by getting into Selenium Grid but encounter roadblocks pretty quickly when trying to scale
 - Features
 - Allow anyone to have a disposable and flexible Selenium Grid infrastructure
 - Zalenium Dashboard
@@ -51,6 +51,9 @@ One can install zalenium in multiple ways
 ### Steps:
 
 #### 1. Create AKS Cluster on AKS 
+
+You can create a AKS cluster by Azure portal or Azure CLI
+
   Login into azure by CLI
   
   `az login`	
