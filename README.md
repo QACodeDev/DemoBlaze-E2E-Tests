@@ -2,7 +2,7 @@
 ![project Logo](/ProjectPic.png)
 
 ## Project Summary
-This project used to execute selenium tests in parallel by using the zalenium(installed on AKS by helm chart) through azure pipeline.Parallel test execution save lots of time ,effort and cost which helps faster in execution.
+This project used to execute selenium tests in parallel by using the zalenium(installed on AKS by helm chart) through azure pipeline.Parallel test execution save lots of time ,effort and cost which helps faster in execution.I am using a sample website - https://www.demoblaze.com/
 
 ### Zalenium
 A flexible and scalable container-based Selenium Grid with video recording, live preview, basic auth & dashboard. Start a Selenium Grid in seconds, a grid that scales up and down dynamically with this solution based on docker-selenium to run your tests in Firefox and Chrome. 
